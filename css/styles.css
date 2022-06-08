@@ -11,8 +11,13 @@
     display: flex;
 }
 #flexbox .box1 {
-    background-color: cornsilk;
-    width:70%;
+    background-color: rgb(218, 176, 9);
+    width:50%;
+    height:70%;
+}
+#flexbox .box2 {
+    background-color: #e7272d;
+    width:50%;
     height:70%;
 }
 #submit {
@@ -20,7 +25,7 @@
     color: var(--button-text, #fff);
 }
 
-@media (max-width: 350px) {
+@media (max-width: 550px) {
     #submit {
         --button-color: #fff;
         --button-text: #e7272d;
