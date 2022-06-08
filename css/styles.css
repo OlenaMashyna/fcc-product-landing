@@ -1,5 +1,28 @@
+:root {
+    --button-color: #e7272d;
+    --button-text: #fff;
+  }
 #nav-bar {
-    position:fixed;
-    top:0;
-    
+    position: fixed;
+    top: 0;
+}
+#flexbox {
+    height:200px;
+    display: flex;
+}
+#flexbox .box1 {
+    background-color: cornsilk;
+    width:70%;
+    height:70%;
+}
+#submit {
+    background-color: var(--button-color,#e7272d);
+    color: var(--button-text, #fff);
+}
+
+@media (max-width: 350px) {
+    #submit {
+        --button-color: #fff;
+        --button-text: #e7272d;
+    }
 }

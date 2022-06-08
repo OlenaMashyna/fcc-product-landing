@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -21,13 +21,14 @@
         </nav>
     </div>
     <main id="main">
-        <video width="320" height="240" controls>
-            <source src="https://youtu.be/5-Vf8a8x29M" type="video/mp4"  id="video">
-            Your browser does not support the video tag.
-        </video>
+        <div id="flexbox">
+            <div class="box1"></div>
+        </div>
+        <iframe id="video" width="560" height="315" src="https://youtu.be/5-Vf8a8x29M" frameborder="0"></iframe>
+        </iframe>
         <form id="form" action="https://www.freecodecamp.com/email-submit">
             <input type="email" name="email" id="email" placeholder="Enter Email">
-            <button type="submit" id="submit"></button>
+            <button type="submit" id="submit">Submit</button>
         </form>
     </main>
     <footer id="footer">
