@@ -5,33 +5,128 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Keep your memories</title>
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
 </head>
 
 <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <div id="fcc_test_suite_wrapper" style="position: relative !important; z-index: 99999 !important;"></div>
-    <div id="header">
-        <img src="img/logo.jpg" id="header-img">
-        <nav id="nav-bar">
-            <a href="#header" class="nav-link">Link 1</a>
-            <a href="#main" class="nav-link">Link 2</a>
-            <a href="#footer" class="nav-link">Link 3</a>
-        </nav>
+    <div id="header" class="header">
+        <div class="header-container">
+            <div class="logo-area">
+                <img src="img/logo.png" id="header-img">
+                <h1 class="logo-area-heading">Keep your memories</h1>
+            </div>
+            <div class="nav-container">
+                <nav id="nav-bar">
+                    <a href="#about" class="nav-link">About us</a>
+                    <a href="#products" class="nav-link">Products</a>
+                    <a href="#contacts" class="nav-link">Contacts</a>
+                </nav>
+            </div>
+        </div>
     </div>
     <main id="main">
-        <div id="flexbox">
-            <div class="box1"></div>
-            <div class="box2"></div>
-        </div>
-        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/2TbUPGeqNX8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <form id="form" action="https://www.freecodecamp.com/email-submit">
-            <input type="email" name="email" id="email" placeholder="Enter Email">
-            <button type="submit" id="submit">Submit</button>
-        </form>
+        <!-- About Section -->
+        <section id="about" class="section section__about">
+            <div class="section-container">
+                <h2 class="section-heading">About Us</h2>
+                <article class="post-block">
+                    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam, nisi, illo saepe voluptas
+                        suscipit cum dolore recusandae corrupti impedit id necessitatibus quidem quae vitae asperiores
+                        porro laboriosam molestias, exercitationem incidunt.</p>
+                    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam, nisi, illo saepe voluptas
+                        suscipit cum dolore recusandae corrupti impedit id necessitatibus quidem quae vitae asperiores
+                        porro laboriosam molestias, exercitationem incidunt.
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam, nisi, illo saepe voluptas
+                        suscipit cum dolore recusandae corrupti impedit id necessitatibus quidem quae vitae asperiores
+                        porro laboriosam molestias, exercitationem incidunt.</p>
+                    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam, nisi, illo saepe voluptas
+                        suscipit cum dolore recusandae corrupti impedit id necessitatibus quidem quae vitae asperiores
+                        porro laboriosam molestias, exercitationem incidunt.</p>
+                </article>
+                <div class="video-holder">
+                    <iframe id="video" width="400" height="315" src="https://www.youtube.com/embed/EsHYReWezYY"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <iframe width="400" height="315" src="https://www.youtube.com/embed/sSHAFFMZe_Y"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+        <!-- Products Section -->
+        <section id="products" class="section section__products">
+            <div class="section-container">
+                <h2 class="section-heading">Products</h2>
+                <div class="products-holder">
+                    <article class="product-item">
+                        <div class="product-img"><img src="img/prod_01.jpg" alt="ATC series"></div>
+                        <h3 class="product-title">ATC series</h3>
+                        <p class="product-price">150 &#8372;</p>
+                    </article>
+                    <article class="product-item">
+                        <div class="product-img"><img src="img/prod_02.jpg" alt="New Year Card"></div>
+                        <h3 class="product-title">New Year Card</h3>
+                        <p class="product-price">170 &#8372;</p>
+                    </article>
+                    <article class="product-item">
+                        <div class="product-img"><img src="img/prod_03.jpg" alt="Greating Card"></div>
+                        <h3 class="product-title">Greating Card</h3>
+                        <p class="product-price">200 &#8372;</p>
+                    </article>
+                    <article class="product-item">
+                        <div class="product-img"><img src="img/prod_04.jpg" alt="Halloween Album"></div>
+                        <h3 class="product-title">Halloween Album</h3>
+                        <p class="product-price">1500 &#8372;</p>
+                    </article>
+                    <article class="product-item">
+                        <div class="product-img"><img src="img/prod_05.jpg" alt="Greating Card"></div>
+                        <h3 class="product-title">Greating Card</h3>
+                        <p class="product-price">200 &#8372;</p>
+                    </article>
+                    <article class="product-item">
+                        <div class="product-img"><img src="img/prod_06.jpg" alt="Greating Magix Box"></div>
+                        <h3 class="product-title">Greating Magix Box</h3>
+                        <p class="product-price">400 &#8372;</p>
+                    </article>
+                    <article class="product-item">
+                        <div class="product-img"><img src="img/prod_07.jpg" alt="Children Birthday Album"></div>
+                        <h3 class="product-title">Children Birthday Album</h3>
+                        <p class="product-price">1800 &#8372;</p>
+                    </article>
+                    <article class="product-item">
+                        <div class="product-img"><img src="img/prod_08.jpg" alt="Girl's Birthday Album"></div>
+                        <h3 class="product-title">Girl's Birthday Album</h3>
+                        <p class="product-price">1200 &#8372;</p>
+                    </article>
+                    <article class="product-item">
+                        <div class="product-img"><img src="img/prod_09.jpg" alt="Greating Card"></div>
+                        <h3 class="product-title">Greating Card</h3>
+                        <p class="product-price">240 &#8372;</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- Contact section -->
+        <section id="contacts" class="section section-contacts">
+            <h2 class="section-heading">Contacts</h2>
+            <p>Enter your email if you want to receive our latest news.</p>
+            <div class="form-container">
+                <form id="form" action="https://www.freecodecamp.com/email-submit">
+                    <input type="email" name="email" id="email" placeholder="Enter Email" class="email">
+                    <button type="submit" id="submit">Submit</button>
+                </form>
+            </div>
+        </section>
     </main>
     <footer id="footer">
+        <div class="footer-holder section">
+            <p class="copyright">&copy; 2022 Copyright</p>
+        </div>
     </footer>
 </body>
 
